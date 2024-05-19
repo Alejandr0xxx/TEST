@@ -1,0 +1,146 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+header{
+    text-align: center;
+    background-color: rgb(51,51,51);
+    color: white;
+    padding: 25px;
+    z-index: 1;
+
+}
+#addedAlert{
+    display: flex;
+    background-color: rgb(76,175,80);
+    height: 70px;
+    padding: 0 10px;
+    z-index: 2;
+    width: 15%;
+    margin: 50px 0px;
+    position: absolute;
+    border-radius: 3%;
+    color: white;
+    font-size: 30px;
+    align-items: flex-end;
+    opacity: 0;
+}
+.show {
+    opacity: 1;
+    animation: showAlert 5s ease-in-out forwards; 
+}
+
+@keyframes showAlert {
+    0% {
+        opacity: 0; 
+    }
+    10% {
+        opacity: 1; 
+    }
+    50% {
+        opacity: 1; 
+    }
+    80% {
+        opacity: 1; 
+    }
+    100% {
+        opacity: 0; 
+    }
+}
+h1{
+    padding: 10;
+    font-size: 40px;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px;
+    width: 20%;
+    margin: auto;
+    list-style: none;
+    
+
+}
+.navItems{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+.navItems:hover{
+    color: rgb(168, 168, 168);
+}
+
+.main-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.cards{
+    padding: 30px;
+    border: solid rgba(128, 128, 128, 0.527) 1px;
+    text-align: center;
+    border-radius: 2%;
+    box-shadow: 1px;
+}
+.cards:hover{
+    animation: card 1s forwards
+}
+@keyframes card {
+    100%{
+        transform: scale(1.1);
+        padding: 30px;
+        border: solid rgba(128, 128, 128, 0.527) 1px;
+        text-align: center;
+        border-radius: 2%;
+    }
+}
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+}
+h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    padding: 15px 0;
+}
+p{
+    margin: 0 0 15px 0;
+    font-size: 19px;
+}
+.addCart{
+    background-color: rgb(76,175,80);
+    border:  solid rgb(76,175,80) 1px;
+    border-radius: 5%;
+    width: 60%;
+    height: 10%;
+    color: white;
+    font-size: 20px;
+}
+.addCart:hover{
+    background-color: rgb(69, 132, 71);
+    border:  solid rgb(69, 132, 71) 1px;
+
+}
+footer{
+    background-color: rgb(51,51,51);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 15px;
+}
+
