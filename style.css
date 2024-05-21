@@ -93,7 +93,7 @@ ul{
     box-shadow: 1px;
 }
 .cards:hover{
-    animation: card 1s forwards
+    animation: card 0.5s forwards
 }
 @keyframes card {
     100%{
